@@ -9,12 +9,12 @@ const Contact = () => {
     <div>
       <div className={style.contactDetails}>
         <Button
-          label="+91 8011090289"
+          label="+91 12345678"
           icon="pi pi-phone"
           className="p-button-success p-button-lg"
         />
         <Button
-          label="bhaskardaswork@gmail.com"
+          label="youremail@gmail.com"
           icon="pi pi-inbox"
           className="p-button-secondary p-button-lg"
         />
