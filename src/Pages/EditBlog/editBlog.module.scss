@@ -1,0 +1,56 @@
+@import '../../_style/color.scss';
+@import '../../_style/mixin.scss';
+
+.form{
+  text-align: center;
+  margin: 10vh 0;
+
+  .titleInput{
+    width: 85vw;
+    margin-bottom: 3vh;
+  }
+  .descriptionInput{
+    width: 85vw;
+    height: 30vh;
+  }
+  .submitInput{
+    width: 85vw;
+    height: 5vh;
+    background-color: $activelink;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    margin-top: 1vh;
+  }
+}
+
+
+@include onTablet() {
+  .form{
+    .titleInput{
+    width: 70vw;
+  }
+  .descriptionInput{
+    width: 70vw;
+  }
+  .submitInput{
+    width: 70vw;
+  }
+  }
+  
+}
+
+@include onDesktop() {
+  .form{
+    .titleInput{
+    width: 60vw;
+  }
+  .descriptionInput{
+    width: 60vw;
+  }
+  .submitInput{
+    width: 60vw;
+  }
+  }
+}
+

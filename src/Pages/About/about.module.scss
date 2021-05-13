@@ -1,0 +1,39 @@
+@import '../../_style/mixin.scss';
+@import '../../_style/color.scss';
+
+.profileImage{
+  display: flex;
+  width: 70vw;
+  margin: 5vh auto;
+  align-self: center;
+  border-radius: 50%;
+}
+
+@include onTablet() {
+  .profileImage{
+    width: 50vw;
+  }
+  .aboutCard{
+    font-size: 1.2rem;
+  }
+}
+
+@include onDesktop() {
+  .about{
+    display: flex;
+    justify-content: space-between;
+
+    .profileImage{
+      width: 25vw;
+      margin: 5vh 2.5vw;
+    }
+    .aboutCard{
+      width: 60vw;
+      margin: 5vh auto;
+      padding: 0;
+    font-size: 1.5rem;
+
+    }
+    
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../_style/mixin.scss';
+
+.contactDetails{
+  margin: 3vh auto;
+  display: inline-block;
+  text-align: center;
+  line-height: 4rem;
+  justify-content: space-around;
+}
+
+.contactForm{
+  text-align: center;
+
+  .firstName {
+    width: 90vw;
+    margin-top: 5vh;;
+  }
+  .lastName{
+    width: 90vw;
+  }
+  .message{
+    width: 90vw;
+  }
+  .submitContactForm{
+    width: 90vw;
+    margin-top: 2vh;
+  }
+}
+
+@include onDesktop() {
+  .firstName,.lastName,.message,.submitContactForm {
+    width: 60vw !important;
+  }
+
+  .contactDetails{
+    display: flex;
+    justify-content: space-around;
+  }
+}

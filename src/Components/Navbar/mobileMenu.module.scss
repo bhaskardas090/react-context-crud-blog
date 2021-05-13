@@ -1,0 +1,53 @@
+@import '../../_style/color.scss';
+@import '../../_style/mixin.scss';
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+
+}
+.logo{
+  font-family: 'Roboto', Courier, monospace;
+
+.logoLink{
+  text-decoration: none;
+  color: white;
+}
+}
+.navLink{
+  display: inline-block;
+
+  .link{
+  list-style: none;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+.Link{
+  text-decoration: none;
+  color: $primary;
+}
+.selected{
+  color:$activelink;
+  }
+}
+
+.hamburger{
+  margin-top: 1.2rem;
+  background-color: transparent;
+  border: none;
+  color: $secondary;
+}
+
+
+
+@include onDesktop() {
+  .menu{
+    display: none;
+  }
+}
+
+@include onTablet() {
+  .menu{
+    display: none;
+  }
+}

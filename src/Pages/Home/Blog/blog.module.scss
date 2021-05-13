@@ -1,0 +1,31 @@
+@import '../../../_style/mixin.scss';
+@import '../../../_style/color.scss';
+
+.card{
+  width: 90vw;
+  margin: 3vh auto;
+}
+
+.readMoreButton {
+  border: 0;
+  background-color: transparent;
+  color: $activelink;
+  font-weight: bold;
+}
+
+@include onTablet() {
+  .card{
+    width: 80vw;
+  }
+}
+
+@include onDesktop() {
+  .blogList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card{
+    width: 45vw;
+  }
+}

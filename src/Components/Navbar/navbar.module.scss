@@ -1,0 +1,49 @@
+@import '../../_style/color.scss';
+@import '../../_style/mixin.scss';
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+}
+.logo{
+  font-family: 'Roboto', Courier, monospace;
+.logoLink{
+  text-decoration: none;
+  color: white;
+}
+
+}
+.navLink{
+  display: flex;
+
+  .link{
+  list-style: none;
+  padding: 1rem;
+  font-size: 1.3rem;
+  }
+
+  .Link{
+  text-decoration: none;
+  color: white;
+  }
+
+  .selected{
+  color:$activelink;
+  }
+
+}
+.menuBreak{
+  border: 0;
+  height: 0;
+  border-top: 1px solid $secondary;
+  border-bottom: 1px solid $primary;
+  margin: 0;
+}
+
+
+// * DISABLE ON MOBILE
+@include onMobile() {
+  .menu{
+    display: none;
+  }
+}
